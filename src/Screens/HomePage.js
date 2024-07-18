@@ -34,6 +34,9 @@ const HomePage = ({navigation}) => {
   const bottomsheetRef = useRef(null);
   const [studentLeaderBoard, setStudentLeaderBoard] = useState([]);
   const [topStudents, setTopstudents] = useState([]);
+  const [loadingData, setLoadingData] = useState(true);
+  const [loadingQuizzes, setLoadingQuizzes] = useState(true);
+  const [loadingLeaderBoard, setLoadingLeaderBoard] = useState(true);
   const {
     // questions,
     // setQuestions,
@@ -91,9 +94,14 @@ const HomePage = ({navigation}) => {
   };
   // ...
   const fetchLeaderboard = async () => {
-    const leaderboard = await getLeaderboard();
-    setTopstudents(leaderboard?.slice(0, 3));
-    setStudentLeaderBoard(leaderboard);
+    try{
+      const leaderboard = await getLeaderboard();
+      setTopstudents(leaderboard?.slice(0, 3));
+      setStudentLeaderBoard(leaderboard);
+      setLoadingLeaderBoard(false);
+    }catch(error){
+      console.error('Error fetching data:', error);
+    }
 
     '---leaderboard--home-page API CALL ', leaderboard;
   };
@@ -118,54 +126,6 @@ const HomePage = ({navigation}) => {
       }
     }
   };
-  // const fetchAllQuizzes = async () => {
-  //   try {
-
-  //     ("000>");
-  //     const response = await getAllQuizzes();
-
-  //     setQuizzes(response);
-  //    ("--");
-  //   } catch (error) {
-  //     ("__-----__");
-  //     ('Error fetching API data==>', error);
-  //     try {
-  //       await AsyncStorage.clear();
-  //     } catch (e) {
-  //       console.error('Error clearing AsyncStorage', e);
-  //     }
-
-  //     if (error.message === 'TOKEN_EXPIRED') {
-
-  //       setLogoutStatus(true);
-  //     ("logout ");
-  //     }
-
-  //   }
-  // };
-
-  // const fetchAllQuizzes = async () => {
-  //   try {
-  //     const response = await getAllQuizzes();
-  //     setQuizzes(response && response);
-  //     if (quizzes) {
-  //       const extractedQuestions = Object.entries(quizzes[0]?.quiz).flatMap(
-  //         subjectQuestions => {
-  //           return subjectQuestions[1].map(questionObj => ({
-  //             key: subjectQuestions[0],
-  //             answer: '',
-  //             options: questionObj.options,
-  //             question: questionObj.question,
-  //           }));
-  //         },
-  //       );
-  //       setQuizQuestions(extractedQuestions);
-  //       ('--->', quizQuestions.length);
-  //     }
-  //   } catch (error) {
-  //     console.error('Error fetching API dataaaaaaaaaaaa', error.response);
-  //   }
-  // };
 
   const openURL = () => {
     const url = 'https://www.yesacademy.co.in/';
@@ -178,8 +138,13 @@ const HomePage = ({navigation}) => {
   const [studentData, setStudentData] = useState({});
 
   const fetchData = async () => {
-    const profile = await getStudentProfile();
-    setStudentData(profile);
+    try{
+      const profile = await getStudentProfile();
+      setStudentData(profile);
+      setLoadingData(false);
+    }catch(error){
+      console.error('Error fetching data:', error);
+    }
   };
 
   useEffect(() => {
@@ -297,31 +262,6 @@ const HomePage = ({navigation}) => {
             </TouchableOpacity>
           </View>
         </LinearGradient>
-        {/* <View style={homeStyles.thirdBlock}>
-          <View style={homeStyles.insideView2}>
-            <Text style={homeStyles.mainExamText}>Main Exam</Text>
-            <View style={{ flexDirection: 'row' }}>
-              <Text style={homeStyles.Text500}>500</Text>
-              <Image source={ratingStar} />
-            </View>
-          </View>
-          <View style={homeStyles.blankView3} />
-          <View style={{ flexDirection: 'row', paddingHorizontal: 15 }}>
-            <Text style={homeStyles.liveText}>Going live on</Text>
-            <Text style={homeStyles.dateText}>13/072023</Text>
-          </View>
-          <CountdownTimer
-            containerStyle={homeStyles.countdownContainer}
-            boxStyle={homeStyles.countdownBox}
-            numberStyle={homeStyles.countdownNumber}
-            textStyle={homeStyles.countdownText}
-          />
-          <View style={homeStyles.reminderButton}>
-            <Text style={homeStyles.reminderText}>
-              Get Ready for the Quiz !
-            </Text>
-          </View>
-        </View> */}
         <View style={homeStyles.fourthBlock}>
           {flag ? (
             <>
@@ -340,11 +280,13 @@ const HomePage = ({navigation}) => {
                   </Text>
                 </TouchableOpacity>
               </View>
+              {!loadingLeaderBoard && 
               <TopLeaders
                 first={topStudents[1]}
                 second={topStudents[0]}
                 third={topStudents[2]}
               />
+              }
             </>
           ) : (
             <View style={{justifyContent: 'center', alignItems: 'center'}}>

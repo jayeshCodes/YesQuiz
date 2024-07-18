@@ -236,7 +236,7 @@ const Login = ({navigation}) => {
           color: 'lightblue',
           fontWeight: 600,
           textDecorationLine: 'underline',
-        }} to="/SignUp">Click Here!</Link>
+        }} to="/LoginMobile">Click Here!</Link>
       </Text>
     </ScrollView>
   );

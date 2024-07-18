@@ -36,14 +36,15 @@ const LoginOTP = ({ navigation }) => {
                 <Text style={otpStyles.otpHeader}>
                     Enter the code we’ve sent by text to +916393642919
                 </Text>
-                <View style={{ left: -5, marginTop: 45 }}>
+                {/* <View style={{ left: -5, marginTop: 45 }}>
                     <OTPInput
                         code={otpCode}
                         setCode={setOtpCode}
                         maximumLength={MAX_LENGTH}
                         setIsPinReady={setPinReady}
                     />
-                </View>
+
+                </View> */}
             </View>
             <TouchableOpacity
                 style={{

@@ -115,8 +115,26 @@ dependencies {
     } else {
         implementation jscFlavor
     }
+    // Import the BoM for the Firebase platform
+    implementation(platform("com.google.firebase:firebase-bom:33.1.2"))
+
+    // Add the dependency for the Firebase Authentication library
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation("com.google.firebase:firebase-auth")
+
 }
 
 apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project)
 
 apply from: file("../../node_modules/react-native-vector-icons/fonts.gradle")
+tasks.whenTaskAdded { task ->
+    if (task.name == 'lintAnalyzeDebug') {
+        task.dependsOn 'copyReactNativeVectorIconFonts'
+    }
+    if (task.name == 'generateDebugLintReportModel') {
+        task.dependsOn 'copyReactNativeVectorIconFonts'
+    }
+    if (task.name == 'generateDebugLintReportModel') {
+        task.dependsOn 'copyReactNativeVectorIconFonts'
+    }
+}
