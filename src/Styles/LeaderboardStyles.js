@@ -8,7 +8,7 @@ const leaderboardStyles = StyleSheet.create({
   },
   headerText: {
     fontSize: 20,
-    fontWeight: 500,
+    fontWeight: '500',
     color: '#374259',
   },
   cardContainer: {
@@ -26,7 +26,7 @@ const leaderboardStyles = StyleSheet.create({
   },
   rankText: {
     fontSize: 12,
-    fontWeight: 500,
+    fontWeight: '500',
     color: '#000000',
   },
   cardDetailsView: {
@@ -42,12 +42,12 @@ const leaderboardStyles = StyleSheet.create({
   },
   cardDetailsText: {
     fontSize: 12,
-    fontWeight: 500,
+    fontWeight: '500',
     color: '#000000',
   },
   cardScore: {
     fontSize: 12,
-    fontWeight: 500,
+    fontWeight: '500',
     color: '#000000',
   },
   allTimeRankContainer: {
@@ -65,7 +65,7 @@ const leaderboardStyles = StyleSheet.create({
   },
   yourRankText: {
     fontSize: 10,
-    fontWeight: 500,
+    fontWeight: '500',
     color: '#ffffff',
   },
   yourRankDetailsContainer: {
@@ -81,12 +81,12 @@ const leaderboardStyles = StyleSheet.create({
   },
   youText: {
     fontSize: 10,
-    fontWeight: 500,
+    fontWeight: '500',
     color: '#ffffff',
   },
   yourRankScore: {
     fontSize: 10,
-    fontWeight: 500,
+    fontWeight: '500',
     color: '#ffffff',
   },
   leadersContainer: {
@@ -111,7 +111,7 @@ const leaderboardStyles = StyleSheet.create({
   riyaText: {
     fontSize: 12,
     color: '#374259',
-    fontWeight: 400,
+    fontWeight: '400',
     marginLeft: 15,
     marginTop: 10,
   },
@@ -122,7 +122,7 @@ const leaderboardStyles = StyleSheet.create({
   },
   leadersScore: {
     fontSize: 15,
-    fontWeight: 500,
+    fontWeight: '500',
     color: '#374259',
   },
   kuldeepImage: {
@@ -136,7 +136,7 @@ const leaderboardStyles = StyleSheet.create({
   kuldeepText: {
     fontSize: 12,
     color: '#374259',
-    fontWeight: 400,
+    fontWeight: '400',
     marginTop: 10,
   },
   imageKaran: {
@@ -146,7 +146,7 @@ const leaderboardStyles = StyleSheet.create({
   karanText: {
     fontSize: 12,
     color: '#374259',
-    fontWeight: 400,
+    fontWeight: '400',
 
     marginTop: 10,
   }

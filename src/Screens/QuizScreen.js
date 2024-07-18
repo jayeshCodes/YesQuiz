@@ -298,7 +298,7 @@ const QuizScreen = ({route, navigation}) => {
           backgroundColor: disableaudiencepoll ? '#0000001A' : '#0C3A5B',
           justifyContent: 'center',
           alignItems: 'center',
-          transformOrigin: {x: 0, y: 0},
+          transformOrigin: [0,0,0],
           overflow: 'visible',
           borderColor: disableaudiencepoll ? '#0000001A' : '#FFF200',
           elevation: 10,
@@ -335,7 +335,7 @@ const QuizScreen = ({route, navigation}) => {
           backgroundColor: disableFifty ? '#0000001A' : '#0C3A5B',
           justifyContent: 'center',
           alignItems: 'center',
-          transformOrigin: {x: 0, y: 0},
+          transformOrigin: [0,0,0],
           overflow: 'visible',
           borderRadius: 5,
           borderWidth: 1,
@@ -358,7 +358,7 @@ const QuizScreen = ({route, navigation}) => {
         <Text
           style={{
             fontSize: 15,
-            fontWeight: 500,
+            fontWeight: '500',
             color: disableFifty ? '#0000001A' : '#FFF200',
           }}>
           50:50
@@ -538,7 +538,7 @@ const OptionsCard = ({
             }}
             onPress={onPressOption}
             disabled={disabled}>
-            <Text style={{fontSize: 12, fontWeight: 500, color: '#FFFFFF'}}>
+            <Text style={{fontSize: 12, fontWeight: '500', color: '#FFFFFF'}}>
               {option}
             </Text>
             {audiencePollUsed && (

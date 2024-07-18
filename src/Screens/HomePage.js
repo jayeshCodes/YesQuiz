@@ -7,21 +7,21 @@ import {
   Alert,
   Linking,
   BackHandler,
-  FlatList,
+  Dimensions
+  // FlatList,
 } from 'react-native';
 import React, {useState, useContext, useEffect, useRef} from 'react';
-import {Dimensions} from 'react-native';
-import headerImage from '../../assets/header-image.png';
-import profilePicture from '../../assets/profile-pic.png';
-import ratingStar from '../../assets/rating-star.png';
-import Carousel from 'react-native-snap-carousel';
+// import headerImage from '../../assets/header-image.png';
+// import profilePicture from '../../assets/profile-pic.png';
+// import ratingStar from '../../assets/rating-star.png';
+import Carousel from 'react-native-reanimated-carousel';
 import Teacher from '../../assets/teachers/teacher2.jpeg';
-import CountdownTimer from '../Components/CountdownTimer';
+// import CountdownTimer from '../Components/CountdownTimer';
 import QuizCard from '../Components/QuizCard';
 import {homeStyles} from '../Styles/HomeStyles';
 import {QuestionContext} from '../Constants/ApiContext';
 import axios from 'axios';
-import {Modalize} from 'react-native-modalize';
+// import {Modalize} from 'react-native-modalize';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import Ionicon from 'react-native-vector-icons/Ionicons';
 import {getAllQuizzes} from '../Services/Quiz';
@@ -30,21 +30,21 @@ import {getLeaderboard, getStudentProfile} from '../Services/Student';
 import TopLeaders, {getInitials} from '../Components/TopLeaders';
 import LinearGradient from 'react-native-linear-gradient';
 const HomePage = ({navigation}) => {
-  const [quizQuestions, setQuizQuestions] = useState([]);
+  // const [quizQuestions, setQuizQuestions] = useState([]);
   const bottomsheetRef = useRef(null);
   const [studentLeaderBoard, setStudentLeaderBoard] = useState([]);
   const [topStudents, setTopstudents] = useState([]);
   const {
-    questions,
-    setQuestions,
-    currentQuestionIndex,
-    setQuizName,
-    quizName,
+    // questions,
+    // setQuestions,
+    // currentQuestionIndex,
+    // setQuizName,
+    // quizName,
     quizzes,
     setQuizzes,
   } = useContext(QuestionContext);
   const [logoutstatus, setLogoutStatus] = useState(false);
-  const {makeRequest} = useRequest();
+  // const {makeRequest} = useRequest();
   // (await AsyncStorage.getItem('token'));
   const onOpen = () => {
     if (bottomsheetRef.current) {
@@ -59,6 +59,7 @@ const HomePage = ({navigation}) => {
   }, [logoutstatus]);
 
   const {width: screenWidth} = Dimensions.get('window');
+  const width = Dimensions.get('window').width;
   const onPlay = quiz => {
     '=====>', quiz;
     const {_id, start_time, end_time} = quiz;
@@ -290,7 +291,7 @@ const HomePage = ({navigation}) => {
                 marginTop: 5,
               }}
               onPress={openURL}>
-              <Text style={{color: '#ffffff', fontWeight: 500}}>
+              <Text style={{color: '#ffffff', fontWeight: '500'}}>
                 Learn More
               </Text>
             </TouchableOpacity>
@@ -347,7 +348,7 @@ const HomePage = ({navigation}) => {
             </>
           ) : (
             <View style={{justifyContent: 'center', alignItems: 'center'}}>
-              <Text style={{fontSize: 20, fontWeight: 600, color: '#93AADA'}}>
+              <Text style={{fontSize: 20, fontWeight: '600', color: '#93AADA'}}>
                 Leader Board Coming Soon
               </Text>
               <Ionicon name="lock-closed" size={100} color="#93AADA" />
@@ -360,31 +361,56 @@ const HomePage = ({navigation}) => {
             onPress={() => {
               navigation.navigate('AllQuizes');
             }}>
-            <Text style={{fontSize: 12, fontWeight: 400, color: '#374259'}}>
+            <Text style={{fontSize: 12, fontWeight: '400', color: '#374259'}}>
               View All {`>`}
             </Text>
           </TouchableOpacity>
         </View>
-        {quizzes && quizzes.length > 0 && (
-          <Carousel
-            ref={carouselRef}
-            layout={'default'}
-            data={quizzes}
-            sliderWidth={screenWidth}
-            itemWidth={screenWidth - 60} // Adjust as needed
-            onSnapToItem={setActiveIndex}
-            renderItem={({item}) => (
+        {quizzes && quizzes.length > 0 
+        && (
+          // <Carousel
+          // loop
+          //   ref={carouselRef}
+          //   data={quizzes}
+          //   width={screenWidth}
+          //   scrollAnimationDuration={1000}
+          //   autoPlay={true}
+          //   // itemWidth={screenWidth - 60} // Adjust as needed
+          //   onSnapToItem={setActiveIndex}
+          //   renderItem={({item}) => (
+          //     <QuizCard
+          //       onPress={() => onPlay(item)}
+          //       quizId={item._id}
+          //       title={item.name}
+          //       createdAt={item.created_at}
+          //       startTime={item.start_time}
+          //       questionNumber={countTotalQuestions(item)}
+          //     />
+          //   )}
+          // />
+          <View style={{ flex: 1 }}>
+            <Carousel
+                loop
+                width={width}
+                height={width / 2}
+                autoPlay={true}
+                data={[...new Array(6).keys()]}
+                scrollAnimationDuration={1000}
+                // onSnapToItem={(index) => console.log('current index:', index)}
+                renderItem={({ index }) => (
               <QuizCard
-                onPress={() => onPlay(item)}
-                quizId={item._id}
-                title={item.name}
-                createdAt={item.created_at}
-                startTime={item.start_time}
-                questionNumber={countTotalQuestions(item)}
+                onPress={() => onPlay(quizzes[index])}
+                quizId={quizzes[index]._id}
+                title={quizzes[index].name}
+                createdAt={quizzes[index].created_at}
+                startTime={quizzes[index].start_time}
+                questionNumber={countTotalQuestions(quizzes[index])}
               />
-            )}
-          />
         )}
+            />
+        </View>
+        )
+        }
       </View>
     </ScrollView>
   );

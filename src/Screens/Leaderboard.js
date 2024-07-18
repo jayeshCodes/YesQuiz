@@ -87,7 +87,7 @@ const Leaderboard = ({navigation, route}) => {
       <Header onPress={() => navigation.goBack()} />
       <Tab.Navigator
         screenOptions={{
-          labelStyle: {fontSize: 14, fontWeight: 500},
+          labelStyle: {fontSize: 14, fontWeight: '500'},
           indicatorStyle: {borderBottomColor: '#374259', borderBottomWidth: 4},
           activeTintColor: '#374259',
           inactiveTintColor: 'grey',

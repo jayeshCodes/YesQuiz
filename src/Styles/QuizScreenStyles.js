@@ -15,7 +15,7 @@ const quizScreenStyles = StyleSheet.create({
     },
     heading: {
         fontSize: 20,
-        fontWeight: 500,
+        fontWeight: '500',
         marginTop: 5,
         textTransform: "uppercase",
         color: '#ffffff'
@@ -27,7 +27,7 @@ const quizScreenStyles = StyleSheet.create({
     },
     currentScore: {
         fontSize: 17,
-        fontWeight: 500,
+        fontWeight: '500',
         color: '#ffffff',
         marginLeft: 7
     },
@@ -67,19 +67,19 @@ const quizScreenStyles = StyleSheet.create({
         top: 15,
         fontSize: 13,
         color: '#374259',
-        fontWeight: 500
+        fontWeight: '500'
     },
     questionNumber: {
         marginTop: 25,
         fontSize: 13,
-        fontWeight: 600,
+        fontWeight: '600',
         color: '#000000'
     },
     questionText: {
         marginTop: 10,
         fontSize: 12,
         color: "#222222",
-        fontWeight: 400,
+        fontWeight: '400',
         lineHeight: 22
     },
     optionsContainer: {
@@ -102,7 +102,7 @@ const quizScreenStyles = StyleSheet.create({
     },
     nextText: {
         fontSize: 13,
-        fontWeight: 500,
+        fontWeight: '500',
         color: '#ffffff'
     }
 })

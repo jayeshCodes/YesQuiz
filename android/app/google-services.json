@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "215781178245",
+    "project_id": "yes-quiz-phoneauth-android",
+    "storage_bucket": "yes-quiz-phoneauth-android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:215781178245:android:124d193276f8a172a522ec",
+        "android_client_info": {
+          "package_name": "com.freelancing"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLyFeTjSgHS8fyiY99pvNsbhz3eGA4O0U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:215781178245:android:a2bf75a99165b55ca522ec",
+        "android_client_info": {
+          "package_name": "com.yesquiz"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLyFeTjSgHS8fyiY99pvNsbhz3eGA4O0U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

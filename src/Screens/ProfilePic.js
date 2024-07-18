@@ -30,14 +30,14 @@ const ProfilePic = ({ navigation }) => {
                 style={{ flexDirection: 'row', marginLeft: 22, marginTop: 50, alignItems: 'center' }}
                 onPress={() => navigation.navigate('HomePage')}
             >
-                <Text style={{ fontSize: 16, fontWeight: 500, color: '#FFFFFF', marginRight: 5 }}>
+                <Text style={{ fontSize: 16, fontWeight: '500', color: '#FFFFFF', marginRight: 5 }}>
                     Skip
                 </Text>
                 <Ionicon name='chevron-forward-outline' size={18} color='#FFFFFF' />
             </TouchableOpacity>
 
             <View style={{ marginTop: 80, justifyContent: 'center', alignItems: 'center' }}>
-                <Text style={{ fontSize: 20, fontWeight: 500, color: '#FFFFFF', textAlign: 'center' }}>
+                <Text style={{ fontSize: 20, fontWeight: '500', color: '#FFFFFF', textAlign: 'center' }}>
                     Upload a profile picture
                 </Text>
                 <TouchableOpacity
@@ -66,7 +66,7 @@ const ProfilePic = ({ navigation }) => {
                 }}
                 disabled={disable}
             >
-                <Text style={{ fontSize: 16, fontWeight: 500, color: 'white' }}>
+                <Text style={{ fontSize: 16, fontWeight: '500', color: 'white' }}>
                     Continue
                 </Text>
             </TouchableOpacity>

@@ -25,7 +25,7 @@ const LoginConfirmation = ({ navigation }) => {
         <View style={{ flex: 1, backgroundColor: '#374259' }}>
             <Image source={headerImage} style={{ alignSelf: 'flex-end', right: -40, top: -15 }} />
             <View style={{ marginTop: 70, justifyContent: 'center', alignItems: 'center' }}>
-                <Text style={{ fontSize: 20, textAlign: 'center', color: 'white', fontWeight: 500 }}>
+                <Text style={{ fontSize: 20, textAlign: 'center', color: 'white', fontWeight: '500' }}>
                     Are you student of{'\n'}Yes Academy ?
                 </Text>
                 <View style={{ flexDirection: 'row', marginTop: 30, justifyContent: 'center' }}>
@@ -36,7 +36,7 @@ const LoginConfirmation = ({ navigation }) => {
                             setSelectYes(!selectYes)
                         }}
                     >
-                        <Text style={{ fontSize: 12, fontWeight: 400, color: 'black' }}>
+                        <Text style={{ fontSize: 12, fontWeight: '400', color: 'black' }}>
                             Yes
                         </Text>
                     </TouchableOpacity>
@@ -47,7 +47,7 @@ const LoginConfirmation = ({ navigation }) => {
                             setSelectNo(!selectNo)
                         }}
                     >
-                        <Text style={{ fontSize: 12, fontWeight: 400, color: 'black' }}>
+                        <Text style={{ fontSize: 12, fontWeight: '400', color: 'black' }}>
                             No
                         </Text>
                     </TouchableOpacity>
@@ -56,7 +56,7 @@ const LoginConfirmation = ({ navigation }) => {
             <View style={{ paddingHorizontal: 20, marginTop: 60 }}>
                 {show &&
                     <>
-                        <Text style={{ fontSize: 12, fontWeight: 400, color: 'white' }}>
+                        <Text style={{ fontSize: 12, fontWeight: '400', color: 'white' }}>
                             Enter your enrollment number
                         </Text>
                         <TextInput
@@ -76,7 +76,7 @@ const LoginConfirmation = ({ navigation }) => {
                     onPress={() => validate()}
                     disabled={disable}
                 >
-                    <Text style={{ fontSize: 16, fontWeight: 500, color: 'white' }}>
+                    <Text style={{ fontSize: 16, fontWeight: '500', color: 'white' }}>
                         Continue
                     </Text>
                 </TouchableOpacity>

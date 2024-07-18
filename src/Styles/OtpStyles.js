@@ -23,18 +23,18 @@ const otpStyles = StyleSheet.create({
     },
     initialText: {
         fontSize: 20,
-        fontWeight: 500,
+        fontWeight: '500',
         color: 'white'
     },
     otpHeader: {
         fontSize: 10,
-        fontWeight: 400,
+        fontWeight: '400',
         color: 'white',
         marginTop: 10
     },
     continueText: {
         fontSize: 16,
-        fontWeight: 500,
+        fontWeight: '500',
         color: 'white'
     }
 

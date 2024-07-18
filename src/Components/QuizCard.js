@@ -60,7 +60,7 @@ const QuizCard = ({
           justifyContent: 'space-between',
           width: '100%',
         }}>
-        <Text style={{fontSize: 12, fontWeight: 500, color: '#0E0E0E'}}>
+        <Text style={{fontSize: 12, fontWeight: '500', color: '#0E0E0E'}}>
           {title}
         </Text>
         <View style={{flexDirection: 'row'}}>
@@ -68,7 +68,7 @@ const QuizCard = ({
             style={{
               fontSize: 18,
               color: '#394257',
-              fontWeight: 700,
+              fontWeight: '700',
               marginRight: 10,
             }}>
             {questionNumber}
@@ -98,10 +98,10 @@ const QuizCard = ({
           <Ionicon name="pencil" size={24} color="#93AADA" />
           {/* <Image source={Science} style={{borderRadius: 10, marginRight: 12}} /> */}
           <View style={{marginLeft: 5}}>
-            <Text style={{fontSize: 10, fontWeight: 400, color: '#000000'}}>
+            <Text style={{fontSize: 10, fontWeight: '400', color: '#000000'}}>
               Questions - {questionNumber}
             </Text>
-            <Text style={{fontSize: 10, fontWeight: 400, color: '#000000'}}>
+            <Text style={{fontSize: 10, fontWeight: '400', color: '#000000'}}>
               {created_at}
             </Text>
           </View>

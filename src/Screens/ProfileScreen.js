@@ -62,7 +62,7 @@ const ProfileScreen = ({ navigation }) => {
             }}>
             {data.first_name} {data.last_name}
           </Text>
-          <Text style={{ fontSize: 12, fontWeight: 400, color: '#748AA1' }}>
+          <Text style={{ fontSize: 12, fontWeight: '400', color: '#748AA1' }}>
             Beginner
           </Text>
         </View>
@@ -85,10 +85,10 @@ const ProfileScreen = ({ navigation }) => {
               justifyContent: 'space-between',
               marginBottom: 16,
             }}>
-            <Text style={{ fontSize: 12, fontWeight: 500, color: '#748AA1' }}>
+            <Text style={{ fontSize: 12, fontWeight: '500', color: '#748AA1' }}>
               Email:
             </Text>
-            <Text style={{ fontSize: 12, fontWeight: 600, color: '#031645' }}>
+            <Text style={{ fontSize: 12, fontWeight: '600', color: '#031645' }}>
               {data.email}
             </Text>
           </View>
@@ -98,10 +98,10 @@ const ProfileScreen = ({ navigation }) => {
               justifyContent: 'space-between',
               marginBottom: 16,
             }}>
-            <Text style={{ fontSize: 12, fontWeight: 500, color: '#748AA1' }}>
+            <Text style={{ fontSize: 12, fontWeight: '500', color: '#748AA1' }}>
               Phone Number:
             </Text>
-            <Text style={{ fontSize: 12, fontWeight: 600, color: '#031645' }}>
+            <Text style={{ fontSize: 12, fontWeight: '600', color: '#031645' }}>
               {data.phone}
             </Text>
           </View>
@@ -111,10 +111,10 @@ const ProfileScreen = ({ navigation }) => {
               justifyContent: 'space-between',
               marginBottom: 16,
             }}>
-            <Text style={{ fontSize: 12, fontWeight: 500, color: '#748AA1' }}>
+            <Text style={{ fontSize: 12, fontWeight: '500', color: '#748AA1' }}>
               Programme:
             </Text>
-            <Text style={{ fontSize: 12, fontWeight: 600, color: '#031645' }}>
+            <Text style={{ fontSize: 12, fontWeight: '600', color: '#031645' }}>
               {data.programme}
             </Text>
           </View>
@@ -124,10 +124,10 @@ const ProfileScreen = ({ navigation }) => {
               justifyContent: 'space-between',
               marginBottom: 16
             }}>
-            <Text style={{ fontSize: 12, fontWeight: 500, color: '#748AA1' }}>
+            <Text style={{ fontSize: 12, fontWeight: '500', color: '#748AA1' }}>
               Batch:
             </Text>
-            <Text style={{ fontSize: 12, fontWeight: 600, color: '#031645' }}>
+            <Text style={{ fontSize: 12, fontWeight: '600', color: '#031645' }}>
               {data.batch}
             </Text>
           </View>
@@ -136,10 +136,10 @@ const ProfileScreen = ({ navigation }) => {
               flexDirection: 'row',
               justifyContent: 'space-between',
             }}>
-            <Text style={{ fontSize: 12, fontWeight: 500, color: '#748AA1' }}>
+            <Text style={{ fontSize: 12, fontWeight: '500', color: '#748AA1' }}>
               Student of Yes Academy:
             </Text>
-            <Text style={{ fontSize: 12, fontWeight: 600, color: '#031645' }}>
+            <Text style={{ fontSize: 12, fontWeight: '600', color: '#031645' }}>
               {data.yes_academy ? 'Yes' : 'No'}
             </Text>
           </View>
@@ -151,7 +151,7 @@ const ProfileScreen = ({ navigation }) => {
             width: '35%',
           }}>
           <Image source={RatingStar} style={{ height: 41, width: 41 }} />
-          <Text style={{ fontSize: 20, fontWeight: 600, color: '#394257' }}>
+          <Text style={{ fontSize: 20, fontWeight: '600', color: '#394257' }}>
             500
           </Text>
         </View>
@@ -189,7 +189,7 @@ const ProfileScreen = ({ navigation }) => {
           marginTop: 24
         }}
         onPress={logout}>
-        <Text style={{ fontSize: 14, fontWeight: 500, color: '#394257' }}>
+        <Text style={{ fontSize: 14, fontWeight: '500', color: '#394257' }}>
           Logout
         </Text>
         <Ionicon name="arrow-forward-outline" size={20} color={'#000000'} />

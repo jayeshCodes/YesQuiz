@@ -12,7 +12,7 @@ const CourseComponent = ({ onPress, text, selected, disable }) => {
             onPress={onPress}
             disabled={disable}
         >
-            <Text style={{ fontSize: 12, fontWeight: 400, color: selected ? 'white': 'black' }}>
+            <Text style={{ fontSize: 12, fontWeight: '400', color: selected ? 'white': 'black' }}>
                 {text}
             </Text>
         </TouchableOpacity>

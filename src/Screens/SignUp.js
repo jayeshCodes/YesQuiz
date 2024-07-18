@@ -68,14 +68,14 @@ const SignUp = ({navigation}) => {
         <Ionicon name="arrow-back-outline" size={24} color="#FFFFFF" />
       </TouchableOpacity>
       <View style={{paddingHorizontal: 20}}>
-        <Text style={{fontSize: 20, fontWeight: 500, color: 'white'}}>
+        <Text style={{fontSize: 20, fontWeight: '500', color: 'white'}}>
           Your Info
         </Text>
 
         <Text
           style={{
             fontSize: 12,
-            fontWeight: 300,
+            fontWeight: '300',
             color: 'white',
             marginTop: 40,
           }}>
@@ -103,7 +103,7 @@ const SignUp = ({navigation}) => {
         <Text
           style={{
             fontSize: 12,
-            fontWeight: 300,
+            fontWeight: '300',
             color: 'white',
             marginTop: 30,
           }}>
@@ -131,7 +131,7 @@ const SignUp = ({navigation}) => {
         <Text
           style={{
             fontSize: 12,
-            fontWeight: 300,
+            fontWeight: '300',
             color: 'white',
             marginTop: 30,
           }}>
@@ -164,7 +164,7 @@ const SignUp = ({navigation}) => {
         <Text
           style={{
             fontSize: 12,
-            fontWeight: 300,
+            fontWeight: '300',
             color: 'white',
             marginTop: 30,
           }}>
@@ -198,7 +198,7 @@ const SignUp = ({navigation}) => {
         <Text
           style={{
             fontSize: 12,
-            fontWeight: 300,
+            fontWeight: '300',
             color: 'white',
             marginTop: 30,
           }}>
@@ -268,7 +268,7 @@ const SignUp = ({navigation}) => {
         <Text
           style={{
             fontSize: 12,
-            fontWeight: 300,
+            fontWeight: '300',
             color: 'white',
             marginTop: 30,
           }}>
@@ -292,7 +292,7 @@ const SignUp = ({navigation}) => {
               setYesAcademy(true);
             }}
             disabled={selectNo}>
-            <Text style={{fontSize: 12, fontWeight: 400, color: 'black'}}>
+            <Text style={{fontSize: 12, fontWeight: '400', color: 'black'}}>
               Yes
             </Text>
           </TouchableOpacity>
@@ -308,7 +308,7 @@ const SignUp = ({navigation}) => {
               setYesAcademy(false);
             }}
             disabled={selectYes}>
-            <Text style={{fontSize: 12, fontWeight: 400, color: 'black'}}>
+            <Text style={{fontSize: 12, fontWeight: '400', color: 'black'}}>
               No
             </Text>
           </TouchableOpacity>
@@ -331,7 +331,7 @@ const SignUp = ({navigation}) => {
           signUpUser();
         }}
         disabled={disable}>
-        <Text style={{fontSize: 16, fontWeight: 500, color: 'white'}}>
+        <Text style={{fontSize: 16, fontWeight: '500', color: 'white'}}>
           Continue
         </Text>
       </TouchableOpacity>

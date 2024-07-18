@@ -159,12 +159,12 @@ const homeStyles = StyleSheet.create({
     },
     headingLeaderboardText: {
         fontSize: 12,
-        fontWeight: 500,
+        fontWeight: '500',
         color: '#0E0E0E'
     },
     fullLeaderboard: {
         fontSize: 12,
-        fontWeight: 400,
+        fontWeight: '400',
         color: '#0E0E0E'
     },
     leaderboardCard: {
@@ -180,7 +180,7 @@ const homeStyles = StyleSheet.create({
     riyaText: {
         fontSize: 12,
         color: '#374259',
-        fontWeight: 400,
+        fontWeight: '400',
         marginTop: 10
     },
     imageRiya: {
@@ -197,7 +197,7 @@ const homeStyles = StyleSheet.create({
     kuldeepText: {
         fontSize: 12,
         color: '#374259',
-        fontWeight: 400,
+        fontWeight: '400',
         marginTop: 10,
     },
     imageKaran: {
@@ -207,7 +207,7 @@ const homeStyles = StyleSheet.create({
     karanText: {
         fontSize: 12,
         color: '#374259',
-        fontWeight: 400,
+        fontWeight: '400',
         marginTop: 10,
         alignSelf:'center'
     },
@@ -220,7 +220,7 @@ const homeStyles = StyleSheet.create({
     },
     headingQuizText: {
         fontSize: 12,
-        fontWeight: 500,
+        fontWeight: '500',
         color: '#374259'
     },
     fifthBlock: {
@@ -235,7 +235,7 @@ const homeStyles = StyleSheet.create({
     shareText: {
         fontSize: 12,
         color: '#374259',
-        fontWeight: 400,
+        fontWeight: '400',
         opacity: 0.5
     },
     shareButton: {
@@ -254,7 +254,7 @@ const homeStyles = StyleSheet.create({
     },
     bottomSheetHeader: {
         fontSize: 14,
-        fontWeight: 600,
+        fontWeight: '600',
         color: '#394257',
         textAlign: 'center'
     },
@@ -265,13 +265,13 @@ const homeStyles = StyleSheet.create({
     },
     pointsText: {
         fontSize: 12,
-        fontWeight: 500,
+        fontWeight: '500',
         color: '#3B4255',
         marginLeft: 8
     },
     bottomSheetSubText: {
         fontSize: 10,
-        fontWeight: 500,
+        fontWeight: '500',
         color: '#1E1E1E',
         lineHeight: 18,
         marginTop: 6
@@ -288,7 +288,7 @@ const homeStyles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         transform: [{ rotate: '45deg' }],
-        transformOrigin: { x: 0, y: 0 },
+        transformOrigin: [0,0,0],
         overflow: 'hidden',
         borderRadius: 5,
         borderWidth: 1,
@@ -297,13 +297,13 @@ const homeStyles = StyleSheet.create({
     },
     lifelineIcon: {
         fontSize: 12,
-        fontWeight: 500,
+        fontWeight: '500',
         color: '#ffffff',
         transform: [{ rotate: '-45deg' }]
     },
     lifelineText: {
         fontSize: 12,
-        fontWeight: 500,
+        fontWeight: '500',
         color: '#42003F',
         marginLeft: 8
     },
@@ -314,7 +314,7 @@ const homeStyles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         transform: [{ rotate: '45deg' }],
-        transformOrigin: { x: 0, y: 0 },
+        transformOrigin: [0,0,0],
         overflow: 'hidden',
         borderRadius: 5,
         borderWidth: 1,
@@ -331,7 +331,7 @@ const homeStyles = StyleSheet.create({
     },
     startText: {
         fontSize: 16,
-        fontWeight: 500,
+        fontWeight: '500',
         color: '#FFFFFF'
     },
     initialsCircle: {

@@ -53,14 +53,14 @@ const ResetPassword = ({navigation, route}) => {
         <Ionicon name="arrow-back-outline" size={24} color="#FFFFFF" />
       </TouchableOpacity>
       <View style={{paddingHorizontal: 20}}>
-        <Text style={{fontSize: 20, fontWeight: 500, color: 'white'}}>
+        <Text style={{fontSize: 20, fontWeight: '500', color: 'white'}}>
           Enter Credentials
         </Text>
 
         <Text
           style={{
             fontSize: 12,
-            fontWeight: 300,
+            fontWeight: '300',
             color: 'white',
             marginTop: 30,
           }}>
@@ -86,7 +86,7 @@ const ResetPassword = ({navigation, route}) => {
         <Text
           style={{
             fontSize: 12,
-            fontWeight: 300,
+            fontWeight: '300',
             color: 'white',
             marginTop: 30,
           }}>
@@ -115,7 +115,7 @@ const ResetPassword = ({navigation, route}) => {
         <Text
           style={{
             fontSize: 12,
-            fontWeight: 300,
+            fontWeight: '300',
             color: 'white',
             marginTop: 30,
           }}>
@@ -170,7 +170,7 @@ const ResetPassword = ({navigation, route}) => {
           resetPassword();
         }}
         disabled={disable}>
-        <Text style={{fontSize: 16, fontWeight: 500, color: 'white'}}>
+        <Text style={{fontSize: 16, fontWeight: '500', color: 'white'}}>
           Continue
         </Text>
       </TouchableOpacity>

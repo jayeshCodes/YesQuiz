@@ -17,7 +17,7 @@ const OptionsCard = ({ disabled, option, answer, onPress }) => {
             onPress={onPressOption}
             disabled={disabled}
         >
-            <Text style={{ fontSize: 12, fontWeight: 500, color: '#42003F' }}>
+            <Text style={{ fontSize: 12, fontWeight: '500', color: '#42003F' }}>
                 {option}
             </Text>
         </TouchableOpacity>

@@ -8,7 +8,7 @@ const resultStyles = StyleSheet.create({
         paddingVertical: 20
     },
     headerText: {
-        fontSize: 35, fontWeight: 500, color: '#FFFFFF'
+        fontSize: 35, fontWeight: '500', color: '#FFFFFF'
     },
     imageContainer: {
         justifyContent: 'center',
@@ -23,19 +23,19 @@ const resultStyles = StyleSheet.create({
     },
     userText: {
         fontSize: 20,
-        fontWeight: 200,
+        fontWeight: '200',
         color: '#FFFFFF',
         marginTop: 10
     },
     congratsText: {
         fontSize: 35,
-        fontWeight: 600,
+        fontWeight: '600',
         color: '#ffffff',
         marginVertical: 15
     },
     congratsSubText: {
         fontSize: 16,
-        fontWeight: 600,
+        fontWeight: '600',
         color: '#EDC987',
     },
     pointsView: {
@@ -51,7 +51,7 @@ const resultStyles = StyleSheet.create({
     },
     pointsText: {
         fontSize: 24,
-        fontWeight: 600,
+        fontWeight: '600',
         color: '#ffffff',
         marginRight: 14
     },
@@ -74,14 +74,14 @@ const resultStyles = StyleSheet.create({
     },
     timeText: {
         fontSize: 14,
-        fontWeight: 500,
+        fontWeight: '500',
         color: 'grey',
         marginTop: 20,
         textAlign: 'center'
     },
     correctText: {
         fontSize: 14,
-        fontWeight: 500,
+        fontWeight: '500',
         color: '#ffffff',
         marginTop: 10,
         textAlign: 'center'
@@ -105,7 +105,7 @@ const resultStyles = StyleSheet.create({
     },
     bottomText: {
         fontSize: 12,
-        fontWeight: 500,
+        fontWeight: '500',
         color: '#ffffff',
         marginTop: 6
     },

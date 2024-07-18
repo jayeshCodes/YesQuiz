@@ -79,14 +79,14 @@ const EnterEmail = ({navigation}) => {
         <Ionicon name="arrow-back-outline" size={24} color="#FFFFFF" />
       </TouchableOpacity>
       <View style={{paddingHorizontal: 20}}>
-        <Text style={{fontSize: 20, fontWeight: 500, color: 'white'}}>
+        <Text style={{fontSize: 20, fontWeight: '500', color: 'white'}}>
           Enter Your Email
         </Text>
 
         <Text
           style={{
             fontSize: 12,
-            fontWeight: 300,
+            fontWeight: '300',
             color: 'white',
             marginTop: 30,
           }}>
@@ -135,7 +135,7 @@ const EnterEmail = ({navigation}) => {
         {loading ? (
           <ActivityIndicator size={'small'} color={'#FFFFFF'} />
         ) : (
-          <Text style={{fontSize: 16, fontWeight: 500, color: 'white'}}>
+          <Text style={{fontSize: 16, fontWeight: '500', color: 'white'}}>
             Continue
           </Text>
         )}

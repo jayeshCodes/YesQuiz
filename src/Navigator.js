@@ -3,7 +3,7 @@ import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 import React from 'react'
 import Splash from './Screens/Splash'
-// import LoginMobile from './Screens/LoginMobile'
+import LoginMobile from './Screens/LoginMobile'
 // import LoginOTP from './Screens/LoginOTP'
 import Login from './Screens/LoginDetails'
 // import LoginConfirmation from './Screens/LoginConfirmation'
@@ -34,7 +34,7 @@ const Navigator = () => {
                         headerShown: false
                     }}>
                         <Stack.Screen name='Splash' component={Splash} />
-                        {/* <Stack.Screen name='LoginMobile' component={LoginMobile} /> */}
+                        <Stack.Screen name='LoginMobile' component={LoginMobile} />
                         {/* <Stack.Screen name='LoginOTP' component={LoginOTP} /> */}
                         <Stack.Screen name='Login' component={Login} />
                         {/* <Stack.Screen name='LoginConfirmation' component={LoginConfirmation} /> */}

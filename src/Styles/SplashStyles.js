@@ -23,7 +23,7 @@ justifyContent: 'center',
   },
   getStartedText: {
     fontSize: 16,
-    fontWeight: 500,
+    fontWeight: '500',
     color: 'white',
   },
   logo: {

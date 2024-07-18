@@ -41,7 +41,7 @@ const QuizInfoCard = ({
           }}>
             <View style={{display:'flex',flexDirection: 'row',justifyContent:"space-between", alignItems: 'center'}}>
           <Image source={Science} style={{width: 35, height: 35}} />
-          <Text style={{fontSize: 12, fontWeight: 500, color: '#374259',paddingLeft:10}}>
+          <Text style={{fontSize: 12, fontWeight: '500', color: '#374259',paddingLeft:10}}>
             {title}
           </Text>
           </View>
@@ -51,7 +51,7 @@ const QuizInfoCard = ({
               style={{
                 fontSize: 18,
                 color: '#394257',
-                fontWeight: 700,
+                fontWeight: '700',
                 marginRight: 10,
               }}>
               500
@@ -78,7 +78,7 @@ const QuizInfoCard = ({
           <View style={{ display:'flex',flexDirection:'row', alignItems: 'center',justifyContent:'space-around'}}>
             {/* <Image source={Science} style={{borderRadius: 10, marginRight: 12}} /> */}
             <View style={{marginLeft: 5}}>
-              <Text style={{fontSize: 10, fontWeight: 400}}>
+              <Text style={{fontSize: 10, fontWeight: '400'}}>
                 Date publish - {createdAt.split(',')[0]}
               </Text>
               {/* <Text style={{fontSize: 10, fontWeight: 400}}>{created_at}</Text> */}
